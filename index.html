@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Latvian osu! Community</title>
+  <style>
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    <div id="initial-loader" style="
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #3D121A; /* loading screen tbd */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fffffff5;
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  z-index: 9999;
+">
+      <div style="text-align: center;">
+        <img style="
+      width: 80px;
+      height: 80px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 1rem auto;
+    " src="https://r2.maze.lv/public/osulv.webp" />
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/main.tsx"></script>
+  <noscript>Please enable javascript if you wanna view this. It won't hurt you, neckbeard.</noscript>
+</body>
+
+</html>
